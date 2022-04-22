@@ -13,6 +13,7 @@ const Bio = () => {
     query BioQuery {
       author: wpUser {
         firstName
+        lastName
         twitter: name
         description
         avatar {
@@ -35,7 +36,7 @@ const Bio = () => {
       )}
       {author?.firstName && (
         <p>
-          Geschreven door <strong>{author.firstName}</strong>
+           Hallo! Ik ben <strong>{author.firstName} {author.lastName}</strong>.
           {` `}
           {author?.description || null}
         </p>
