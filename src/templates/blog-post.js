@@ -100,7 +100,7 @@ export const pageQuery = graphql`
       excerpt
       content
       title
-      date(formatString: "MMMM DD, YYYY")
+      date(formatString: "DD MMMM YYYY", locale: "nl")
       featuredImage {
         node {
           altText
