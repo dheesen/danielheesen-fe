@@ -15,7 +15,7 @@ const BlogIndex = ({
   if (!posts.length) {
     return (
       <Layout isHomePage>
-        <Seo title="All posts" />
+        <Seo title="Alle Berichten" />
         <Bio />
         <p>
           No blog posts found. Add posts to your WordPress site and they'll
@@ -27,7 +27,7 @@ const BlogIndex = ({
 
   return (
     <Layout isHomePage>
-      <Seo title="All posts" />
+      <Seo title="Alle Berichten" />
 
       <Bio />
 
@@ -80,7 +80,7 @@ export const pageQuery = graphql`
       nodes {
         excerpt
         uri
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM YYYY", locale: "nl")
         title
         excerpt
       }
